@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title> Objektet ne Javascript</title>
+</head>
+
+<body>
+
+<div id="demo">
+
+</div>
+</body>
+
+
+<script>
+
+    //Krijimi i objektit "person"
+
+    var person = {
+        fname:"Peter",
+        lname: "Parker",
+        age: "23",
+        displayName: function () {
+
+            alert(this.fame + "" + this.lname) // this eshte shenjues qe perdoret per te kapur objektin brenda te cilit jemi.
+        }
+    };
+
+
+    //Menyre e dyte per te inicializuar nje objekt
+    var shteti = new Object();
+    shteti.emer = "Shqiperi";
+    shteti.kryeqytet= "Tirane";
+    shteti.popullsi = "3.8 milion";
+
+
+    //Ruajme vlerat e properties perkatese ne variabla per lehtesi perdorimi
+
+    var fname = person.fname;
+
+    //ose:
+
+    var lname = person['lname'];
+
+
+    var kryeqytet = shteti.kryeqytet;
+
+    document.getElementById("demo").innerHTML= fname  + " " + lname + "," + "banues ne" + kryeqytet + "";
+
+</script>
+</html>
