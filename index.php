@@ -6,6 +6,7 @@
   <body>
     <h1> Ky eshte index-i i php</h1>
 
+<a href="leksion.php" target="_blank">Next page</a>
     <h2>
 <?php $text = "Ky eshte shkrim nga php.";
 $var1 = 123;
@@ -107,9 +108,35 @@ echo "<br> Rrenja e $abs eshte $sqrt.";
 
 echo '<br> Nje numer rastesor eshte:' . rand();
 
+#GJETJA E RRENJEVE NE EKUACION TE FUQISE SE PARE
+
+# x^2 - 5x + 6 = 0;
+
+$a = 1;
+$b = -5;
+$c = 10;
+
+$d = pow($b, 2) - (4 * $a * $c);
+
+echo "<br>" . $d;
+
+if($d > 0){
+
+  $x1 = (-$b + sqrt($d))/2*$a;
+  $x2 = (-$b - sqrt($d))/2*$a;
+
+  echo "<br> Rrenjet e ekuacionit jane: $x1 dhe $x2";
+
+}
+elseif($d == 0){
+  $x1 = -$b/(2*$a);
+  echo "<br> Ekuacioni ka nje rrenje, qe eshte: $x1";
+}
+else
+echo "<br> ekuacioni nuk ka zgjidhje";
 
 
-
+#swith case
 
 
 
