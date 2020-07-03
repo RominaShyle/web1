@@ -38,12 +38,81 @@ echo "<p class= 'text-center'>Nuk e dime ca dite eshte</p>";
 
 define("GOOGLE_URL", "https://www.google.com");
 
-echo 'Thank you for visiting -' . GOOGLE_URL;
-
-
-
+echo 'Thank you for visiting -' . GOOGLE_URL . '<br>';
 
  ?>
+
+
+ <div class="row">
+   <div class="col-md-3 text-center">
+     <?php
+
+     # Ciklet ne PHP
+
+     echo "<h5 style='color:red' class='text-center'> Afishoni numrat nga 1 deri ne 10 </h5>";
+
+     $nr = 1;
+
+     while($nr <= 10){
+
+       echo $nr . '<br>';
+       $nr++;
+
+     }
+
+      ?>
+
+   </div>
+
+
+   <div class="col-md-3 text-center">
+
+     <h5> Numrat nga 0-100 me hap 10 </h5>
+
+     <?php
+
+     $nr2 = 0;
+
+     while($nr2 <= 100){
+
+       echo $nr2 . '<br>';
+       $nr2 = $nr2 + 10;
+
+     }
+
+      ?>
+
+   </div>
+
+   <div class="col-md-3 text-center">
+
+     <h5> Cikli me for</h5>
+     <?php
+
+for($i = 0; $i<=100; $i = $i+10){
+
+  echo "$i <br>";
+}
+
+      ?>
+
+   </div>
+
+   <div class="col-md-3 text-center">
+
+     <h5> Cikli me for nga 100-0</h5>
+     <?php
+
+for($i = 100; $i>=0; $i = $i-10){
+
+  echo "$i <br>";
+}
+
+      ?>
+
+   </div>
+
+ </div>
 
 
       </div>
