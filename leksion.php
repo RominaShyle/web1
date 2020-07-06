@@ -105,7 +105,7 @@ for($i = 0; $i<=100; $i = $i+10){
 
 for($i = 100; $i>=0; $i = $i-10){
 
-  echo "$i <br>";
+  echo " $i <br>";
 }
 
       ?>
@@ -113,6 +113,53 @@ for($i = 100; $i>=0; $i = $i-10){
    </div>
 
  </div>
+
+
+<div class="row mt-3">
+
+  <div class="col-md-4 border">
+
+    <h5> Ciklet ne Arrays </h5>
+
+    <?php
+
+    # Madhesia e array : sizeof($arr)
+
+$cars = array("Volvo", "BMW", "Fiat");
+
+foreach ($cars as $key => $item){
+
+  echo $item . ' ndodhet ne pozicionin: ' . $key . '<br>';
+}
+
+
+
+     ?>
+
+  </div>
+
+<div class="col-md-4  border">
+  <?php
+
+  $colors=array(
+    "White" => "#fffff",
+    "Black" => "#00000",
+    "Red" => "#ff0000"
+  );
+
+  foreach ($colors as $key => $value) {
+    echo " Kodi i $key eshte $value <br>";
+  }
+
+   ?>
+
+
+
+</div>
+
+
+</div>
+
 
 
       </div>
